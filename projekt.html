@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>projekt</title>
+		<link rel= "stylesheet" href="pr1.css">
+	</head>
+	<body>
+		<div class="baner" id="bannerleft">
+			<h1>Czarnota's Front-end<br>Web Development Company</h1>
+		</div>
+		<div class="baner" id="bannermiddle">
+			<a href="projekt.html"><img src="logo.png"></a>
+		</div>
+		<div class="baner" id="bannerright">
+			<h1>Pomoc w tworzeniu strony<br>internetowej dla KAŻDEGO!</h1>
+		</div>
+		<div id="slider" class="slides">
+			<div class="slide">
+				<figure>
+					<img class="hidden" src="slajdy/slide1.jpg" alt="pierwszyslajd">
+				</figure>
+			</div>
+			
+			<div class="slide">
+				<figure>
+					<img class="hidden" src="slajdy/slide2.jpg" alt="drugislajd">
+				</figure>
+			</div>
+			
+			<div class="slide">
+				<figure>
+					<img class="hidden" src="slajdy/slide3.jpg" alt="trzecislajd">
+				</figure>
+			</div>
+		
+			<nav role="pagination" class="dots">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</nav>
+			<nav role="pagination" class="arrows">
+				<button class="arrow-prev"><</button>
+			</nav>
+			<nav role="pagination" class="arrows">
+				<button class="arrow-next">></button>
+			</nav>
+		</div>
+		
+		<div id="menu">
+			<ul>
+				<li><a href="projekt.html">Strona główna</a></li><br>
+				<li><a href="osiagniecia.html">Nasze osiągnięcia</a></li><br>
+				<li><a href="zlecenie.html">Złóż zlecenie<a/></li><br>
+				<li><a href="szablony.html">Szablony</a></li><br>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
+		
+		<div id="content">
+				
+		</div>
+		
+		<div id="ad">
+			
+		</div>
+		
+		<div id="footer">
+		</div>
+		
+		<script src="comp.js"></script>
+		<script src="slider.js"></script>
+		<script>
+		(function () {
+		  new Slider("#slider .slide").options({
+			  prev: "#slider nav button.arrow-prev",
+			  next: "#slider nav button.arrow-next",
+			  nav: "#slider nav.dots span"
+		  }).init();
+})();
+</script>
+	</body>
+</html>
